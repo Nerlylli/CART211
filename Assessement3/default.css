@@ -1,3 +1,7 @@
+/*Start of a CSS comment
+* Comment here
+End of the comment */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
@@ -83,4 +87,36 @@ footer {
 footer a {
     text-decoration: none;
     color: black;
+}
+
+.books {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    max-width: 100%;
+    gap: 16px;
+}
+
+.books img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.books>div {
+    text-align: center;
+    padding: 10px;
+}
+
+.books figure {
+    margin: 0;
+}
+
+article figure figcaption {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+table img {
+    max-width: 100%;
+    max-height: 100%;
 }

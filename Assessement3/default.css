@@ -3,12 +3,13 @@
 End of the comment */
 
 body {
+    background-color: rgb(244, 206, 244);
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
 }
 
-#wrapper {
+#Wrapper {
     margin-top: 0px;
     float: right;
     width: 60%;
@@ -43,17 +44,18 @@ header img {
 }
 
 nav {
-    margin-top: 50px;
+    margin-top: 75px;
     margin-left: 50px;
     float: left;
     width: 15%;
     line-height: 30px;
-    position: fixed;
+    position: absolute;
 }
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 0, 212);
+    font-size: 20px;
     font-weight: bold;
 }
 

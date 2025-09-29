@@ -4,10 +4,15 @@ End of the comment */
 
 body {
     background-color: rgb(244, 206, 244);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Bitcount Prop Single Ink, system-ui;
     padding: 0;
     margin: 0;
+    font-optical-sizing: auto;
+    font-weight: 25;
+    font-style: normal;
 }
+
+/*Google Fonts Implementation*/
 
 #wrapper {
     margin-top: 0px;

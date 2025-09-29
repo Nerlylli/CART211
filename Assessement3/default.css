@@ -135,17 +135,11 @@ table img {
         margin-bottom: 50px;
         width: 100%;
         box-sizing: border-box;
-        padding: 10px 0;
+        padding: 20px 0;
         line-height: 30px;
-        position: relative;
-        display: flex;
         justify-content: space-around;
-        align-items: center;
         flex-wrap: wrap;
-        border-bottom: 4px solid #000;
-        background: #000;
         z-index: 1000;
-        color: white;
     }
 
     nav a {

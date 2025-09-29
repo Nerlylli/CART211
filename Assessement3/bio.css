@@ -3,7 +3,9 @@
 End of the comment */
 
 body {
-    background-color: rgb(145, 192, 233);
+    background-image: url(assets/sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: Waiting for the sunrise;
     padding: 0;
     margin: 0;

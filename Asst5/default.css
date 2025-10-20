@@ -116,7 +116,13 @@ footer a {
     padding: 0;
 }
 
-.books figure .im {
+.books figure {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.im {
     width: 100%;
     height: auto;
     aspect-ratio: 1/1;
@@ -187,7 +193,20 @@ footer a {
     grid-row: 10/12;
 }
 
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    color: black;
+}
 
+.social .fa {
+    font-size: 3em;
+    padding: 12px;
+    color: black;
+}
 
 /*.books img {
     display: block;

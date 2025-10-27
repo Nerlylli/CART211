@@ -34,15 +34,22 @@
     <div id="wrapper">
         <header>
             <nav>
-                <div class="logo"><a href="#"><img src="assets/logo.png" alt="Logo"></a>
+                <div class="logo"><a href="#"><img src="assets/logo.png" alt="Logo" width="110px" height="50px"></a>
                 </div>
 
                 <div class="menu1">
-                    <a href="index.html">INDEX</a><br>
-                    <a href="index.html">STORIES</a><br>
-                    <a href="#">ABOUT</a>
-                </div>
+                    <button>class ="close-menu">&times;</button>
+                    <a href="storie1.html" class="menuI">STORIES</a>
+                    <a href="#" class="menuI">SERIES</a><br>
+                    <a href="index.html" class="menuI_active">ABOUT</a><br>
 
+                </div>
+                <!-- Hamburger menu button for mobile version-->
+                <div>class="hamburger-menu"
+                    <button>
+                        <span class="fa fa-bars"></span>
+                    </button>
+                </div>
 
             </nav>
         </header>
@@ -159,4 +166,17 @@
 
     </div>
 
+    <!--script for the hambuger menu-->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hambugerButton = document.querySelector('hamburger-menu button');
+            const closeButton = document.querySelector('.close-menu');
+            const menu1 = document.querySelector('menu1');
+
+            //Handle opening the menu
+            hambugerButton.addEventListener('click', () => {
+                menu1.classList.add
+            })
+        })
+    </script>
 </body>

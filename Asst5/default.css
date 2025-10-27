@@ -61,6 +61,34 @@ nav {
     align-items: center;/
 }
 
+.hamburger-menu {
+    display: none;
+    /*Hidden by default, will be shown on mobile*/
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger-menu button {
+    background: none;
+    border: none;
+    font-size: 2em;
+    /*Size of the hamburger button*/
+    color: gray;
+}
+
+.hamburger-menu button .fa-bars {
+    cursor: pointer;
+}
+
+.close-menu {
+    display: none;
+}
+
+#wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
 /*.menu1 {
     display: block;
     justify-content: space-around;
@@ -78,6 +106,15 @@ nav a {
 
 nav a:hover {
     color: darkgray;
+}
+
+.menuI {
+    text-align: right;
+}
+
+.menuI_active {
+    text-align: right;
+    color: gray;
 }
 
 section {
@@ -233,7 +270,50 @@ table img {
     max-height: 100%;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
+
+    .hamburger-menu {
+        display: flex;
+        /*Ensure the hamburger menu is visible and aligned*/
+        align-items: center;
+        /*Cener the button vertically in the header*/
+    }
+
+    .menu1 {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .menu1 a {
+        padding: 20px;
+        /*Increase padding to space out elements*/
+    }
+
+    .menu1 a,
+    .menu a:hover {
+        text-decoration: none;
+        /*Remove underline for normal and hover states*/
+        color: gray;
+        /*Link color unchanged*/
+        background-color: transparent;
+        /*No background change on hover*/
+    }
+
+    button {
+        border-width: 0px;
+        background-color: white;
+    }
+
+
     nav {
         margin: 0 auto;
         margin-bottom: 50px;
@@ -241,9 +321,58 @@ table img {
         box-sizing: border-box;
         padding: 20px 0;
         line-height: 30px;
+        position: relative;
+        display: flex;
         justify-content: space-around;
+        align-items: center;
         flex-wrap: wrap;
+        border-bottom: 4px solid #000;
+        background-color: #000;
         z-index: 1000;
+        color: white;
+    }
+
+    .close-menu {
+        display: block;
+        /*Ensure the button is visible*/
+        position: absolute;
+        /*Absoulte positioning to place the button precisely*/
+        top: 20px;
+        /*Space from the top*/
+        right: 20px;
+        /*Space from the right*/
+        font-size: 2em;
+        /*Icon size*/
+        color: gray;
+
+    }
+
+    /*Display the menu fullscreen on mobile*/
+    .menu-deployed {
+        display: flex;
+        /*Use flexbox for layout*/
+        flex-direction: column;
+        /*Stack elements vertically*/
+        justify-content: center;
+        /*center elements vertically*/
+        align-items: center;
+        /*center elements horizontally*/
+        width: 100%;
+        /*take full width*/
+        height: 100vh;
+        /*take full height of the viewport*/
+        position: fixed;
+        /*fixed position to cover the entire screen*/
+        top: 0;
+        /*from the top of the page*/
+        left: 0;
+        /*from the left side of the page*/
+        background-color: white;
+        /*white background for the menu*/
+        z-index: 1000;
+        /*ensure the menu is above all content*/
+        padding-top: 50px;
+        /*add some space at the top*/
     }
 
     nav a {

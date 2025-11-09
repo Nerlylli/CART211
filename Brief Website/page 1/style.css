@@ -1,0 +1,90 @@
+/*Start of CSS*/
+
+body {
+    background-image: url(assets/images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Press Start 2P', cursive;
+    color: black;
+    margin: 0;
+    padding: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.phone,
+.box,
+.text1,
+.music,
+.top-text,
+.middle-text,
+.main-text {
+    background: #ff69b4;
+    border: 3px solid hotpink;
+    box-shadow: 0 0 15px #fff, 0 0 25px #ff00ff, inset 0 0 10px #fff;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    text-shadow: 1px 1px 2px #fff;
+    border-radius: 10px;
+}
+
+.phone {
+    /* background: url(assets/images/phone.jpg); */
+    height: 300px;
+    width: 300px;
+}
+
+.box {
+    height: 50px;
+}
+
+.text1 {
+    height: 50px;
+}
+
+.music {
+    background: url(assets/images/music2.gif);
+    height: 205px;
+    width: 500px;
+}
+
+.top-text {
+    height: 60px;
+}
+
+.middle-text {
+    height: 60px;
+}
+
+.main-text {
+    background: url(assets/images/maint.jpg);
+    background-repeat: no-repeat;
+    background-size: 500px 526px;
+    height: 526px;
+    width: 500px;
+}
+
+.phone:hover,
+.box:hover,
+.text1:hover,
+.music:hover,
+.middle-text:hover,
+.top-text:hover,
+.main-text:hover {
+    background: linear-gradient(90deg, #ff66ff, #ffccff);
+    transform: scale(1.03);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}

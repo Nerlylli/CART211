@@ -1,4 +1,14 @@
 /*Start of CSS*/
+div.scroll-box {
+    height: 150px;
+    width: 280px;
+    font: 10pt/20pt Verdana, arial, sans-serif;
+    overflow: scroll;
+}
+
+* {
+    cursor: url(assets/images/sailormoon_cursor.png), auto !important;
+}
 
 body {
     background-image: url(assets/images/background.jpg);
@@ -8,6 +18,18 @@ body {
     color: black;
     margin: 0;
     padding: 40px;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    left: 105px;
+    bottom: -135px;
+    width: 300px;
+    height: 300px;
+    background-image: url('assets/images/hatsunemiku_idle.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .container {
@@ -23,13 +45,25 @@ body {
     gap: 20px;
 }
 
+.left .phone,
+.left .scroll-box {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.left .phone+.scroll-box {
+    margin-left: 220px;
+    margin-top: -214px;
+}
+
 .phone,
 .box,
 .text1,
 .music,
 .top-text,
 .middle-text,
-.main-text {
+.main-text,
+.scroll-box {
     background: #ff69b4;
     border: 3px solid hotpink;
     box-shadow: 0 0 15px #fff, 0 0 25px #ff00ff, inset 0 0 10px #fff;
@@ -41,17 +75,24 @@ body {
 }
 
 .phone {
-    /* background: url(assets/images/phone.jpg); */
-    height: 300px;
-    width: 300px;
+    background: url(assets/images/mp3.jpg);
+    background-size: cover;
+    height: 150px;
+    width: 150px;
 }
 
+
 .box {
-    height: 50px;
+    height: 133px;
 }
 
 .text1 {
-    height: 50px;
+    position: absolute;
+    left: 210px;
+    bottom: 0px;
+    height: 133px;
+    width: 290px;
+    position: relative;
 }
 
 .music {
@@ -71,20 +112,44 @@ body {
 .main-text {
     background: url(assets/images/maint.jpg);
     background-repeat: no-repeat;
-    background-size: 500px 526px;
-    height: 526px;
+    background-size: 550px 619px;
+    height: 570px;
     width: 500px;
 }
 
+
 .phone:hover,
-.box:hover,
-.text1:hover,
-.music:hover,
-.middle-text:hover,
-.top-text:hover,
-.main-text:hover {
-    background: linear-gradient(90deg, #ff66ff, #ffccff);
+.menu-btn:hover,
+.scroll-box:hover {
+    background: linear-gradient(90deg, #FF46A2, #ffccff);
     transform: scale(1.03);
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+}
+
+/* Menu Button */
+.menu-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: #e9eef3;
+    box-shadow: inset 0 2px 3px rgba(255, 255, 255, 0.8);
+
+}
+
+.menu-icon {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 3px 0;
+    border-radius: 2px;
 }

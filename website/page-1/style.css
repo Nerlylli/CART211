@@ -118,9 +118,7 @@ body::after {
 }
 
 
-.phone:hover,
-.menu-btn:hover,
-.scroll-box:hover {
+.phone:hover {
     background: linear-gradient(90deg, #FF46A2, #ffccff);
     transform: scale(1.03);
     cursor: pointer;

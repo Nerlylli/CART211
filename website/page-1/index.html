@@ -188,7 +188,20 @@
         <div class="left">
             <div class="phone"></div>
             <div class="scroll-box">
-                List of songs(Will start scrolling once the text is long enough)
+                <p><strong>f5ve - Underground</strong></p>
+                <p>Despite the upbeat melody, the song <em>‘Underground’</em> by f5ve, has a deep message about the
+                    social
+                    pressures brought on by
+                    capitalism, making people want to withdraw from the outside world and live in the underground. In
+                    the song, that place
+                    is used as a metaphor, both for capitalism, as well as a critique of it. At first, the metro – a
+                    public transit system
+                    frequently utilized by the working class to commute – serves as a representation of the underground
+                    world they are
+                    trying to escape. Later on in the video, that same underground world transforms into a rave, and
+                    into a subterranean
+                    automobile meet.
+                </p>
             </div>
             <div class="music">Music</div>
             <div class="box"></div>
@@ -207,6 +220,24 @@
             <div class="menu-icon"></div>
         </div>
     </div>
+
+    <audio id="mp3-audio">
+        <source src="assets/audio/f5ve - Underground (Official MV).wav" type="audio/mpeg">
+    </audio>
+
+    <script>
+        const mp3Box = document.querySelector('.phone');
+        const audio = document.getElementById('mp3-audio');
+
+        mp3Box.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        });
+    </script>
+
 </body>
 
 </html>

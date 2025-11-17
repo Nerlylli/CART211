@@ -14,7 +14,11 @@ body {
     background-image: url(assets/images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Press Start 2P', cursive;
+    font-family: Verdana,
+        arial,
+        sans-serif;
+    /* 'Press Start 2P',
+            cursive; */
     color: black;
     margin: 0;
     padding: 40px;
@@ -103,7 +107,57 @@ body::after {
 
 .top-text {
     height: 60px;
+    color: hotpink;
+    text-align: center;
+    -webkit-animation: glow 10s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
 }
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 20px black,
+            0 0 30px black,
+            0 0 40px #e60073,
+            0 0 50px #e60073,
+            0 0 60px #e60073,
+            0 0 70px #e60073,
+            0 0 80px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 30px black,
+            0 0 40px #ff4da6,
+            0 0 50px #ff4da6,
+            0 0 60px #ff4da6,
+            0 0 70px #ff4da6,
+            0 0 80px #ff4da6,
+            0 0 90px #ff4da6;
+    }
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px black,
+            0 0 20px black,
+            0 0 30px #e60073,
+            0 0 40px #e60073,
+            0 0 50px #e60073,
+            0 0 60px #e60073,
+            0 0 70px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 20px black,
+            0 0 30px #ff4da6,
+            0 0 40px #ff4da6,
+            0 0 50px #ff4da6,
+            0 0 60px #ff4da6,
+            0 0 70px #ff4da6,
+            0 0 80px #ff4da6;
+    }
+}
+
 
 .middle-text {
     height: 60px;
@@ -150,4 +204,55 @@ body::after {
     background-color: #000;
     margin: 3px 0;
     border-radius: 2px;
+}
+
+/* Fullscreen overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 182, 193, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.terms-box {
+    background: #ff69b4;
+    border: 3px solid hotpink;
+    box-shadow: 0 0 15px #fff, 0 0 25px #ff00ff, inset 0 0 10px #fff;
+    width: 500px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.terms-content {
+    max-height: 200px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.terms-buttons a {
+    display: inline-block;
+    background: #ffccff;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 3px solid hotpink;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.terms-buttons a:hover {
+    transform: scale(1.1);
+    background: #ff99dd;
 }

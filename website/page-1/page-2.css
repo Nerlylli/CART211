@@ -63,6 +63,7 @@ body {
     clip-path: polygon(10% 0, 100% 10%, 100% 100%, 0 90%);
 }
 
+/* Menu Button */
 .menu-btn:hover {
     background: linear-gradient(90deg, #FF46A2, #ffccff);
     transform: scale(1.03);
@@ -70,7 +71,6 @@ body {
     transition: all 0.2s ease-in-out;
 }
 
-/* Menu Button */
 .menu-btn {
     position: absolute;
     top: 20px;
@@ -94,4 +94,84 @@ body {
     background-color: #000;
     margin: 3px 0;
     border-radius: 2px;
+}
+
+/* Playlist*/
+.player {
+    position: fixed;
+    width: 360px;
+    background: hotpink;
+    padding: 20px;
+    top: 40px;
+    left: 30px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.header img.logo {
+    width: 110px;
+    margin-left: auto;
+}
+
+.track-section {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.track-section img.album-art {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    border: 1px solid black;
+}
+
+.track-info {
+    font-size: 14px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.controls button {
+    margin: 0 5px;
+    padding: 6px 10px;
+    border: 1px solid #888;
+    background: #fff;
+    cursor: pointer;
+}
+
+.playlist {
+    background: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.playlist h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.song {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.song img.cover {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border: 1px solid #aaa;
+}
+
+.song-details {
+    flex: 1;
+    font-size: 14px;
 }

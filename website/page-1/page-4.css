@@ -152,8 +152,8 @@ body {
     font-family: 'Averia';
     font-size: 22px;
     color: black;
-    text-shadow: 0px 0px 4px var(--darkgrey);
-    box-shadow: 0px 0px 5px var(--darkgrey);
+    text-shadow: 0px 0px 4px black;
+    box-shadow: 0px 0px 5px black;
 }
 
 .page1 {

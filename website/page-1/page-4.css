@@ -1,1 +1,322 @@
-/*Start of CSS*/
+:root {
+    --textColor: #345b2f;
+    --darkPink: rgb(229, 0, 179);
+    --pink: #ff74ca;
+    --darkgrey: rgb(66, 66, 66);
+    --lightgrey: grey;
+    --white: #fbf7f7;
+}
+
+* {
+    cursor: url(assets/images/sailormoon_cursor.png), auto !important;
+}
+
+body {
+    background: url(assets/images/background.gif);
+    background-repeat: none;
+    background-size: cover;
+}
+
+/*IMAGE*/
+.mikuSitImg {
+    content: "";
+    position: absolute;
+    margin-left: 700px;
+    bottom: 190px;
+    width: 300px;
+    height: 300px;
+}
+
+.gameImg {
+    content: "";
+    position: absolute;
+    margin-left: 1035px;
+    bottom: 415px;
+    rotate: 45deg;
+    width: 100px;
+    height: 100px;
+}
+
+#mainSection {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -57px;
+    margin-left: 50%;
+    transform: translate(-52.9%, 0);
+    position: relative;
+}
+
+/* MENUS */
+#pinkMenu,
+#blackMenu {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.pageName {
+    text-decoration: none;
+}
+
+/* BOXES */
+.box {
+    margin-top: 10px;
+    border-radius: 10px;
+    color: white;
+    align-content: center;
+    font-family: "Enhanced Dot Digital";
+    font-size: 20px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.rightBox {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.leftBox {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+/* TITLE BOXES */
+.menuTitlePink,
+.menuTitleBlack {
+    width: 160px;
+    align-content: center;
+}
+
+.menuTitlePink p {
+    margin: 0;
+    margin-bottom: -6px;
+    margin-top: 12px;
+    letter-spacing: 3px;
+    font-size: 30px;
+    font-family: "Bitcount Ink", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.menuTitleBlack p {
+    margin-bottom: -16px;
+    margin-top: 12px;
+    margin-right: 150px;
+    letter-spacing: 3px;
+    font-size: 30px;
+    font-family: "Coral Pixels", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* PINK BOXES */
+.pinkBox {
+    border: 5px solid transparent;
+    text-shadow: 1px 1px 0px #a31435;
+    background-blend-mode: lighten;
+}
+
+.pinkBox:hover {
+    border: 5px solid #ff748b6c;
+    animation: pinkBlink 0.2s steps(2) forwards;
+    font-family: 'Averia';
+    font-size: 22px;
+    color: var(--darkPink);
+    text-shadow: 0px 0px 4px var(--pink);
+    box-shadow: 0px 0px 5px var(--pink);
+}
+
+/* BLACK BOXES */
+.blackBox {
+    border: 5px solid transparent;
+    background-blend-mode: screen;
+}
+
+.blackBox:hover {
+    border: 5px solid #345b2f3f;
+    animation: greenBlink 0.2s steps(2) forwards;
+    font-family: 'Averia';
+    font-size: 22px;
+    color: black;
+    text-shadow: 0px 0px 4px var(--darkgrey);
+    box-shadow: 0px 0px 5px var(--darkgrey);
+}
+
+.page1 {
+    width: 160px;
+    height: 160px;
+    background-color: var(--darkPink);
+    background-image: url('./imagenes/index/box.jpg');
+    background-position: -10px -15px;
+    background-blend-mode: screen;
+}
+
+.page2 {
+    width: 210px;
+    height: 130px;
+    background-color: var(--pink);
+    background-position: -10px -15px;
+    background-blend-mode: soft-light;
+}
+
+.page3 {
+    width: 105px;
+    height: 105px;
+    background: url(assets/images/musicnotes.gif);
+    background-size: cover;
+    background-repeat: none;
+}
+
+.page4 {
+    width: 80px;
+    height: 80px;
+    background-color: var(--pink);
+}
+
+.page5 {
+    width: 180px;
+    height: 180px;
+    background-color: var(--darkPink);
+    background-position: -90px -60px;
+}
+
+.page6 {
+    width: 140px;
+    height: 100px;
+    background-color: var(--pink);
+    background-image: url('./imagenes/index/box4.jpg');
+    background-position: -10px -10px;
+    background-blend-mode: screen;
+}
+
+/* BLACK MENU BOXES */
+.blackSpacer {
+    width: 160px;
+    height: 90px;
+}
+
+.game1 {
+    width: 160px;
+    height: 160px;
+    background-color: black;
+    background-image: url('assets/images/ds.png');
+    background-repeat: none;
+    background-size: cover;
+}
+
+.game2 {
+    width: 180px;
+    height: 100px;
+    background-color: black;
+    background-position: -10px -110px;
+    background-blend-mode: lighten;
+}
+
+.game3 {
+    width: 140px;
+    height: 120px;
+    background-color: var(--darkgrey);
+}
+
+/* OFFSETS */
+.colOffsetPink {
+    margin-top: 100px;
+}
+
+.colOffsetBlack {
+    margin-top: 80px;
+}
+
+/* ANIMATIONS */
+@keyframes pinkBlink {
+    0% {
+        background-color: black;
+    }
+
+    50% {
+        background-color: var(--pink);
+    }
+
+    100% {
+        background-color: black;
+    }
+}
+
+@keyframes blackBlink {
+    0% {
+        background-color: var(--lightgrey);
+    }
+
+    50% {
+        background-color: var(--darkgrey);
+    }
+
+    100% {
+        background-color: var(--lightgrey);
+    }
+}
+
+/* Fullscreen overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 182, 193, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.terms-box {
+    background: #ff69b4;
+    border: 3px solid hotpink;
+    box-shadow: 0 0 15px #fff, 0 0 25px #ff00ff, inset 0 0 10px #fff;
+    width: 500px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.terms-content {
+    max-height: 200px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.terms-buttons a {
+    display: inline-block;
+    background: #ffccff;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 3px solid hotpink;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.terms-buttons a:hover {
+    transform: scale(1.1);
+    background: #ff99dd;
+}

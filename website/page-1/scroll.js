@@ -53,7 +53,7 @@ index.addEventListener("touchmove", e => {
 // search
 const searchBar = document.getElementById("search");
 const links = index.getElementsByTagName("a");
-searchBar.value = new URLSearchParams(location.search).get("search") ?? "";
+searchBar.value = new URLSearchParams(location.search).get("search");
 
 function search() {
     let filters = searchBar.value.split(" ").map(query => {

@@ -1,1 +1,150 @@
 /*Start of CSS*/
+* {
+    margin: 0;
+}
+
+/*ASTHETIC*/
+body {
+    background-image: url(assets/images/game1_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Verdana,
+        arial,
+        sans-serif;
+    color: black;
+    margin: 0;
+    padding: 40px;
+}
+
+body::after {
+    z-index: 1;
+    content: "";
+    position: fixed;
+    left: 350px;
+    bottom: -22px;
+    width: 800px;
+    height: 800px;
+    background-image: url('assets/images/ds.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.mikuPeek {
+    position: fixed;
+    left: 0px;
+    width: 500px;
+    bottom: 45px;
+}
+
+.mikuIdea {
+    z-index: 4;
+    position: fixed;
+    right: -2px;
+    width: 500px;
+    bottom: -30px;
+}
+
+/*DS*/
+.gameScreen {
+    display: flex;
+    align-items: center;
+}
+
+/*TOP SCREEN*/
+.numerator {
+    position: fixed;
+    left: 554px;
+    bottom: 439px;
+    width: 344px;
+    height: 250px;
+    background: black;
+    border: 3px solid black;
+    padding: 20px;
+}
+
+.numerator h1 {
+    color: white;
+    text-align: center;
+}
+
+.numerator h2 {
+    color: white;
+    font-size: 15px;
+}
+
+/*BOTTOM SCREEN*/
+.denominator {
+    z-index: 2;
+    position: fixed;
+    left: 552px;
+    bottom: 80px;
+    width: 346px;
+    height: 220px;
+    background: black;
+    border: 3px solid black;
+    color: white;
+    padding: 20px;
+}
+
+.denominator h1 {
+    font-size: 20px;
+    color: hotpink;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.quiz {
+    padding: 5px 0;
+}
+
+.quiz h2 {
+    font-size: 18px;
+    color: white;
+    margin: 5px;
+}
+
+.btn {
+    background: black;
+    color: hotpink;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 1px;
+    text-align: left;
+    border-radius: 4px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover:not([disabled]) {
+    background: #222;
+    color: #ffff;
+
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+#next-btn {
+    background: hotpink;
+    color: white;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 10px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.correct {
+    background: #9aeabc;
+}
+
+.incorrect {
+    background: #ff9393;
+}

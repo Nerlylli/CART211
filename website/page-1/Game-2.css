@@ -1,1 +1,128 @@
 /*Start of CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f9f9f9;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo-section,
+.search-section,
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.search-section input {
+    width: 350px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 2px 0 0 2px;
+}
+
+.search-section button {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    background: #eee;
+    cursor: pointer;
+    border-radius: 0 2px 2px 0;
+}
+
+.profile-section .icon,
+.profile-section .profile {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Layout */
+.container {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: white;
+    height: calc(100vh - 60px);
+    position: sticky;
+    top: 60px;
+    padding: 15px;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar .item {
+    display: block;
+    padding: 12px 5px;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.sidebar .item:hover {
+    background: #f0f0f0;
+}
+
+/* Videos Section */
+.videos {
+    flex: 1;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.info-box {
+    height: 210px;
+    background: pink;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail {
+    background: #ccc;
+    height: 150px;
+}
+
+.video-info {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+.profilePic {
+    font-size: 32px;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.meta {
+    color: #555;
+    font-size: 13px;
+}

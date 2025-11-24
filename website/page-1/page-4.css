@@ -25,15 +25,16 @@ body {
 
 .logo-section,
 .search-section,
-.profile-section {
+.profile-section,
+.search-section button {
     display: flex;
     align-items: center;
     gap: 15px;
+    cursor: pointer;
 }
 
 .menu-icon {
     font-size: 24px;
-    cursor: pointer;
 }
 
 .search-section input {
@@ -47,14 +48,12 @@ body {
     padding: 8px 15px;
     border: 1px solid #ccc;
     background: #eee;
-    cursor: pointer;
     border-radius: 0 2px 2px 0;
 }
 
 .profile-section .icon,
 .profile-section .profile {
     font-size: 22px;
-    cursor: pointer;
 }
 
 /* Layout */
@@ -85,21 +84,35 @@ body {
     background: #f0f0f0;
 }
 
+.you {
+    letter-spacing: 1px;
+    margin: 10px;
+    margin-left: 2px;
+    cursor: pointer;
+}
+
 /* Videos Section */
 .videos {
     flex: 1;
+    margin-top: 20px;
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 20px;
+    gap: 10px;
 }
 
 .info-box {
     height: 210px;
-    background: pink;
+    background: transparent;
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.info-box:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .thumbnail {
@@ -125,4 +138,86 @@ body {
 .meta {
     color: #555;
     font-size: 13px;
+}
+
+
+/*ICONS*/
+.utube {
+    height: 40px;
+    width: 40px;
+    margin-right: -10px;
+}
+
+.like {
+    height: 20px;
+    width: 20px;
+    margin-bottom: -3px;
+    margin-right: 10px;
+}
+
+.history {
+    height: 20px;
+    width: 20px;
+    margin-bottom: -5px;
+    margin-right: 10px;
+}
+
+.home {
+    height: 30px;
+    width: 30px;
+    margin-bottom: -8px;
+    margin-right: 5px;
+    margin-left: -5px;
+}
+
+.sub {
+    height: 25px;
+    width: 25px;
+    margin-bottom: -8px;
+    margin-right: 5px;
+    margin-left: -3px;
+}
+
+.shorts {
+    height: 25px;
+    width: 25px;
+    margin-bottom: -8px;
+    margin-right: 5px;
+    margin-left: -3px;
+}
+
+/*BLINKIES*/
+.blinkers {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    gap: 9.5px;
+    position: absolute;
+    left: 242px;
+    margin-top: 5px;
+}
+
+.hamilton {
+    height: 18px;
+    width: 120px;
+}
+
+.deku {
+    height: 25px;
+    width: 50px;
+}
+
+.HMguitar {
+    height: 25px;
+    width: 50px;
+}
+
+/*SUBS PAGE*/
+.collection {
+    flex: 3;
+    margin-top: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }

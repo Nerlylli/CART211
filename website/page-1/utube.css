@@ -175,14 +175,7 @@ body {
     border-radius: 10px;
 }
 
-/*FIVE*/
-/*SIX*/
-/*SEVEN*/
-/*EIGHT*/
-/*NINE*/
-
-
-
+/*VIDEOS*/
 .video-info {
     display: flex;
     padding: 5px;
@@ -283,4 +276,51 @@ body {
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+/* TEXT BOX */
+.text-box {
+    position: absolute;
+    width: 80%;
+    max-width: 1500px;
+    background: repeating-linear-gradient(45deg, #f8f8f8, #f8f8f8 6px, #eee 6px, #eee 12px);
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    padding: 25px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    top: 350px;
+    left: 200px;
+}
+
+/* Pink tab on the top-left corner */
+.tab {
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    width: 120px;
+    height: 30px;
+    background: linear-gradient(to bottom, #ffb6d9, black);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Text inside the box */
+.box-content {
+    position: relative;
+    font-size: 15px;
+    color: #333;
+}
+
+/* Pink triangle arrow at bottom-right */
+.arrow {
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 10px solid black;
 }

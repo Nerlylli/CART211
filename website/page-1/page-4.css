@@ -115,14 +115,77 @@ body {
     cursor: pointer;
 }
 
+
+/*THUMBNAILS*/
 .thumbnail {
     background: #ccc;
     height: 150px;
 }
 
+/* ONE*/
+.one {
+    background: url(assets/images/utube-thumbnails/revoltingChildren.jpg);
+    background-size: cover;
+    background-repeat: none;
+}
+
+
+.netflixIcon {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+}
+
+/*TWO*/
+.two {
+    background: url(assets/images/utube-thumbnails/surveillance.jpg);
+    background-size: cover;
+    background-repeat: none;
+}
+
+.democracy {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+}
+
+/*THREE*/
+.three {
+    background: url(assets/images/utube-thumbnails/thumbs.jpg);
+    background-size: cover;
+    background-repeat: none;
+}
+
+.carpenter {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+}
+
+/*FOUR*/
+.four {
+    background: url(assets/images/utube-thumbnails/americanTeenager.jpg);
+    background-size: cover;
+    background-repeat: none;
+}
+
+.ethel {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+}
+
+/*FIVE*/
+/*SIX*/
+/*SEVEN*/
+/*EIGHT*/
+/*NINE*/
+
+
+
 .video-info {
     display: flex;
-    padding: 10px;
+    padding: 5px;
     gap: 10px;
 }
 

@@ -7,7 +7,7 @@ div.scroll-box {
 }
 
 * {
-    cursor: url(assets/images/sailormoon_cursor.png), auto !important;
+    cursor: crosshair;
 }
 
 body {
@@ -88,6 +88,8 @@ body::after {
 
 .box {
     height: 133px;
+    width: 500px;
+    text-align: justify;
 }
 
 .text1 {
@@ -97,6 +99,13 @@ body::after {
     height: 133px;
     width: 290px;
     position: relative;
+}
+
+.text1 a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 25px;
 }
 
 .music {
@@ -161,6 +170,7 @@ body::after {
 
 .middle-text {
     height: 60px;
+    width: 500px;
 }
 
 .main-text {
@@ -177,31 +187,4 @@ body::after {
     transform: scale(1.03);
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-}
-
-/* Menu Button */
-.menu-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    border: 2px solid #000;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    background: #e9eef3;
-    box-shadow: inset 0 2px 3px rgba(255, 255, 255, 0.8);
-
-}
-
-.menu-icon {
-    width: 25px;
-    height: 3px;
-    background-color: #000;
-    margin: 3px 0;
-    border-radius: 2px;
 }

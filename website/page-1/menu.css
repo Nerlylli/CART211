@@ -38,6 +38,15 @@ body {
     height: 100px;
 }
 
+.mikuPeek {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    margin-left: 866px;
+    bottom: 245px;
+}
+
 #mainSection {
     width: 1000px;
     margin: auto;
@@ -177,6 +186,7 @@ body {
 .page3 {
     width: 105px;
     height: 105px;
+    color: black;
     background: url(assets/images/musicnotes.gif);
     background-size: cover;
     background-repeat: none;
@@ -225,12 +235,6 @@ body {
     background-color: black;
     background-position: -10px -110px;
     background-blend-mode: lighten;
-}
-
-.game3 {
-    width: 140px;
-    height: 120px;
-    background-color: var(--darkgrey);
 }
 
 /* OFFSETS */

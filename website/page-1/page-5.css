@@ -1,1 +1,198 @@
 /* Start of CSS*/
+
+body {
+    background: url(assets/images/page5_bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+/*RIGHT*/
+.introBox,
+.linkBox {
+    position: absolute;
+    width: 165px;
+    padding: 10px;
+    right: 905px;
+}
+
+/*INTRO BOX*/
+.introBox {
+    background: white;
+    border: 1.5px solid hotpink;
+    top: 100px;
+    height: 317px;
+}
+
+.introBox p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: rgb(229, 0, 179);
+}
+
+.introBox p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: rgb(229, 0, 179);
+}
+
+.introBox p strong {
+    color: black;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(229, 0, 179);
+}
+
+.me {
+    height: 70px;
+    width: 70px;
+    border: 2px solid rgb(229, 0, 179);
+    box-shadow: 6px 4px 5px 3px black;
+}
+
+/*LINKBOX*/
+.linkBox {
+    background: rgb(229, 0, 179);
+    border: 1.5px solid white;
+    height: 65px;
+    top: 450px;
+}
+
+.linkText {
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.linkText:hover {
+    border: 5px solid rgb(229, 0, 179);
+    animation: pinkBlink 0.2s forwards;
+    text-shadow: 0px 0px 4px;
+    box-shadow: 0px 0px 5px;
+}
+
+/*LEFT*/
+.pictureBox,
+.textBox {
+    position: absolute;
+    width: 500px;
+    padding: 10px;
+}
+
+/*PICTURE BOX*/
+.pictureBox {
+    z-index: 1;
+    background: transparent;
+    height: 317px;
+    top: 100px;
+    left: 545px;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/*POLAROIDS*/
+.polaroid {
+    width: 200px;
+    background-color: white;
+    padding: 10px 10px 25px 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, z-index 0s;
+    position: relative;
+    z-index: 1;
+
+}
+
+.polaroid:hover {
+    z-index: 999;
+    transform: scale(1.05);
+    cursor: move;
+}
+
+
+.first {
+    margin-left: -25px;
+    margin-top: -50px;
+    transition: transform 0.2s;
+}
+
+.second {
+    margin-left: 110px;
+    margin-top: -285px;
+    transform: rotate(10deg);
+}
+
+.third {
+    margin-left: 300px;
+    margin-top: -350px;
+    transform: rotate(-10deg);
+}
+
+.fourth {
+    margin-top: -50px;
+    margin-left: 300px;
+}
+
+.fifth {
+    margin-left: -20px;
+    margin-top: -250px;
+    transform: rotate(-10deg);
+}
+
+.polaroid img {
+    width: 100%;
+    display: block;
+}
+
+.polaroid .caption {
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    color: #333;
+}
+
+/*TEXT BOX*/
+.textBox {
+    background: white;
+    height: 205px;
+    top: 490px;
+    left: 545px;
+    border: 1.5px solid hotpink;
+}
+
+.window {
+    /* margin-top: 25px; */
+    border: 2px solid #c0c0c0;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    background: #f8f8f8;
+    overflow: hidden;
+    font-family: sans-serif;
+
+}
+
+.titlebar {
+    background: linear-gradient(rgb(229, 0, 179), #c8c8c8);
+    border-bottom: 1px solid #c8c8c8;
+    padding: 6px 10px;
+    cursor: move;
+}
+
+.maxMin {
+    height: 15px;
+    width: 100%px;
+    margin-left: 400px;
+}
+
+.horizontalScroll {
+    width: 100%;
+    margin-top: 600px;
+}

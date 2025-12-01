@@ -70,6 +70,15 @@ body::after {
 .numerator h2 {
     color: white;
     font-size: 15px;
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.numerator h2 p {
+    text-align: center;
+    margin-top: 5px;
+    color: hotpink;
 }
 
 /*BOTTOM SCREEN*/

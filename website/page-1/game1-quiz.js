@@ -1,41 +1,42 @@
 "use strict"
 /**
- * Used "How To Make Quiz App Using JavaScript | Build Quiz App With HTML CSS & JavaScript" Tutorial on YouTube (https://www.youtube.com/watch?v=PBcqGxrr9g8)
+ * Used "How To Make Quiz App Using JavaScript | Build Quiz App With HTML CSS & JavaScript" Tutorial on YouTube
+ * (https://www.youtube.com/watch?v=PBcqGxrr9g8)
  */
 
 const questions = [
     {
-        question: "Question 1",
+        question: "In what way do we own nothing?",
         answers: [
-            { text: "Bad answer 1", correct: false },
-            { text: "Right answer ", correct: true },
-            { text: "Bad answer 2", correct: false },
+            { text: "We pay taxes.", correct: false },
+            { text: "We live in a subscription based society.", correct: true },
+            { text: "We are not a part of the 1%.", correct: false },
         ]
     },
 
     {
-        question: "Question 2",
+        question: "What year was Youtube founded in?",
         answers: [
-            { text: "Bad answer", correct: false },
-            { text: "Bad answer 2", correct: false },
-            { text: "Right answer", correct: true },
+            { text: "In 1997.", correct: false },
+            { text: "In 2009.", correct: false },
+            { text: "In 2005.", correct: true },
         ]
     },
     {
-        question: "Question 3",
+        question: "Where is Capitalism?",
         answers: [
-            { text: "Right answer", correct: true },
-            { text: "Bad answer 1", correct: false },
-            { text: "Bad answer 2", correct: false },
+            { text: "Everywhere.", correct: true },
+            { text: "Nowhere.", correct: false },
+            { text: "Capitalism does not exist.", correct: false },
         ]
     },
 
     {
-        question: "Question 4",
+        question: "Who is Hatsune Miku?",
         answers: [
-            { text: "Right anwer", correct: true },
-            { text: "Right answer 2", correct: true },
-            { text: "All of the above", correct: true },
+            { text: "A Vocaloid Artist.", correct: true },
+            { text: "A blue charachter.", correct: true },
+            { text: "All of the above.", correct: true },
         ]
     },
 ];

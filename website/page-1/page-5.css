@@ -168,6 +168,17 @@ body {
     border: 1.5px solid hotpink;
 }
 
+.textBox p {
+    font-family: Verdana,
+        arial,
+        sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
 .window {
     /* margin-top: 25px; */
     border: 2px solid #c0c0c0;

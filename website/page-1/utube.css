@@ -175,6 +175,13 @@ body {
     border-radius: 10px;
 }
 
+/*FIVE*/
+.five {
+    background: url(assets/images/utube-thumbnails/zoo.jpg);
+    background-size: cover;
+    background-repeat: none;
+}
+
 /*VIDEOS*/
 .video-info {
     display: flex;
@@ -216,6 +223,14 @@ body {
     width: 20px;
     margin-bottom: -5px;
     margin-right: 10px;
+}
+
+.story p {
+    text-align: justify;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 25px;
 }
 
 .home {

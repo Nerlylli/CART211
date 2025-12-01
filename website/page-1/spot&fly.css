@@ -15,6 +15,9 @@ body {
 .comic-grid {
     width: 700px;
     height: 500px;
+    font-family: Verdana,
+        arial,
+        sans-serif;
 }
 
 .panel {
@@ -44,11 +47,31 @@ body {
     clip-path: polygon(0 0, 100% 5%, 90% 100%, 0% 100%);
 }
 
+.left p {
+    color: white;
+    font-size: 15px;
+    text-align: justify;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 25px;
+    line-height: 25px;
+}
+
 
 .middle-top {
     grid-column: 2;
     grid-row: 1;
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+}
+
+.middle-top p {
+    color: white;
+    font-size: 15px;
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 23px;
 }
 
 .middle-botton {
@@ -57,10 +80,32 @@ body {
     clip-path: polygon(0 0, 100% 10%, 90% 100%, 0 90%);
 }
 
+.middle-botton p {
+    color: rgb(253, 0, 126);
+    font-size: 15px;
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 20px;
+    line-height: 25px;
+
+}
+
 .right {
     grid-column: 3;
     grid-row: 1 / span 2;
     clip-path: polygon(10% 0, 100% 10%, 100% 100%, 0 90%);
+}
+
+.right p {
+    color: rgb(253, 0, 126);
+    font-size: 15px;
+    text-align: justify;
+    margin-top: 36px;
+    margin-left: 20px;
+    margin-right: 10px;
+    line-height: 22px;
+
 }
 
 /* Menu Button */

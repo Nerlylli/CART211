@@ -103,6 +103,7 @@ body::after {
     padding-bottom: 10px;
 }
 
+/*QUIZ*/
 .quiz {
     padding: 5px 0;
 }
@@ -156,4 +157,9 @@ body::after {
 
 .incorrect {
     background: #ff9393;
+}
+
+/*BACK TO MENU BUTTON*/
+.back a {
+    color: hotpink;
 }

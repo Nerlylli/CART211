@@ -141,6 +141,13 @@ body {
     border-radius: 2px;
 } */
 
+.back {
+    margin-top: -620px;
+    margin-right: -700px;
+    font-size: 20px;
+    color: black;
+}
+
 /* Playlist*/
 .player {
     position: fixed;

@@ -1,8 +1,8 @@
 /*Start of css*/
 
-/* * {
-    cursor: url(assets/image/sailormoon_cursor.png), auto !important;
-} */
+* {
+    cursor: crosshair;
+}
 
 body {
     background-image: url('http://dl5.glitter-graphics.net/pub/534/534755h92efycwnw.jpg');
@@ -37,6 +37,9 @@ body {
 .text1-1,
 .text2-1,
 .dot {
+    font-family: Verdana,
+        arial,
+        sans-serif;
     background: #FF46A2;
     border: 3px solid hotpink;
     box-shadow: 0 0 15px #fff, 0 0 25px #ff00ff, inset 0 0 10px #fff;
@@ -54,9 +57,20 @@ body {
     position: relative;
 }
 
+.text1 p {
+
+    margin-bottom: -10px;
+}
+
 .text2 {
     height: 130px;
     width: 400px;
+}
+
+.text2 p {
+
+    margin-top: 10px;
+    text-align: justify;
 }
 
 .text3 {
@@ -64,10 +78,34 @@ body {
     width: 400px;
 }
 
+.text3 h2 {
+    margin-top: -5px;
+}
+
+.text3 p {
+    margin-top: -30px;
+    text-align: justify;
+}
+
 .text1-1,
 .text2-1 {
     height: 321px;
     width: 321px;
+    text-align: justify;
+}
+
+.text1-1 p {
+    text-align: center;
+}
+
+
+
+.text2-1 {
+    background: url(assets/images/cdCase.webp);
+    background-size: 120%;
+    background-position-x: -1cm;
+    background-position-y: -1cm;
+    background-repeat: none;
 }
 
 /* .menu-btn:hover {
@@ -209,6 +247,7 @@ body {
     width: 188px !important;
     height: 188px !important;
     margin-top: -2px !important;
+    cursor: pointer;
 }
 
 #vinyl-collection .title {
